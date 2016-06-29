@@ -19,6 +19,7 @@
 		EB496E0B1D24613100339CF0 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EB496E0A1D24613100339CF0 /* Sprites.atlas */; };
 		EB496E0D1D2463F100339CF0 /* Cookie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB496E0C1D2463F100339CF0 /* Cookie.swift */; };
 		EB496E0F1D24684300339CF0 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB496E0E1D24684300339CF0 /* Array2D.swift */; };
+		EB496E111D246B5F00339CF0 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB496E101D246B5F00339CF0 /* Level.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		EB496E0A1D24613100339CF0 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
 		EB496E0C1D2463F100339CF0 /* Cookie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cookie.swift; sourceTree = "<group>"; };
 		EB496E0E1D24684300339CF0 /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
+		EB496E101D246B5F00339CF0 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				EB496DD61D24610500339CF0 /* AppDelegate.swift */,
 				EB496DDA1D24610500339CF0 /* GameScene.swift */,
 				EB496E0C1D2463F100339CF0 /* Cookie.swift */,
+				EB496E101D246B5F00339CF0 /* Level.swift */,
 				EB496E0E1D24684300339CF0 /* Array2D.swift */,
 				EB496DDC1D24610500339CF0 /* GameViewController.swift */,
 				EB496DDE1D24610500339CF0 /* Main.storyboard */,
@@ -273,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB496E111D246B5F00339CF0 /* Level.swift in Sources */,
 				EB496DDB1D24610500339CF0 /* GameScene.swift in Sources */,
 				EB496E0D1D2463F100339CF0 /* Cookie.swift in Sources */,
 				EB496DDD1D24610500339CF0 /* GameViewController.swift in Sources */,

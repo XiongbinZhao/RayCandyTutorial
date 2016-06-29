@@ -9,6 +9,13 @@
 import SpriteKit
 
 class GameScene: SKScene {
+    var level: Level!
+    
+    let TileWidth: CGFloat = 32.0
+    let TileHeight: CGFloat = 36.0
+    
+    let gameLayer = SKNode()
+    let cookiesLayer = SKNode()
     
     override init(size: CGSize) {
         super.init(size: size)
@@ -18,23 +25,41 @@ class GameScene: SKScene {
         let background = SKSpriteNode(imageNamed: "Background")
         background.size = size
         addChild(background)
+        
+        addChild(gameLayer)
+        
+        let layerPosition = CGPoint(x: -TileWidth * CGFloat(NumColumns) / 2,
+                                    y: -TileHeight * CGFloat(NumRows) / 2)
+        
+        cookiesLayer.position = layerPosition
+        gameLayer.addChild(cookiesLayer)
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func didMoveToView(view: SKView) {
-        /* Setup your scene here */
-
+    func addSpritesForCookies(cookies: Set<Cookie>) {
+        for cookie in cookies {
+            let sprite = SKSpriteNode(imageNamed: cookie.cookieType.spriteName)
+            sprite.size = CGSize(width: TileWidth, height: TileHeight)
+            sprite.position = pointForColumn(cookie.column, row: cookie.row)
+            cookiesLayer.addChild(sprite)
+            cookie.sprite = sprite
+        }
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-       /* Called when a touch begins */
+    func pointForColumn(column: Int, row: Int) -> CGPoint {
+        return CGPoint(x: CGFloat(column) * TileWidth + TileWidth / 2,
+                       y: CGFloat(row) * TileHeight + TileHeight / 2)
+    }
     
-    }
-   
-    override func update(currentTime: CFTimeInterval) {
-        /* Called before each frame is rendered */
-    }
 }
+
+
+
+
+
+
+
+
