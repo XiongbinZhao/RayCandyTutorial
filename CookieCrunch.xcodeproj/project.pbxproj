@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A7F56F21D24B091006C6366 /* Level_0.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A7F56ED1D24B091006C6366 /* Level_0.json */; };
+		2A7F56F31D24B091006C6366 /* Level_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A7F56EE1D24B091006C6366 /* Level_1.json */; };
+		2A7F56F41D24B091006C6366 /* Level_2.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A7F56EF1D24B091006C6366 /* Level_2.json */; };
+		2A7F56F51D24B091006C6366 /* Level_3.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A7F56F01D24B091006C6366 /* Level_3.json */; };
+		2A7F56F61D24B091006C6366 /* Level_4.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A7F56F11D24B091006C6366 /* Level_4.json */; };
+		2A7F56F81D24B0E1006C6366 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F56F71D24B0E1006C6366 /* Tile.swift */; };
+		2A7F56FA1D24B186006C6366 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7F56F91D24B186006C6366 /* Extension.swift */; };
 		EB496DD71D24610500339CF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB496DD61D24610500339CF0 /* AppDelegate.swift */; };
 		EB496DDB1D24610500339CF0 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB496DDA1D24610500339CF0 /* GameScene.swift */; };
 		EB496DDD1D24610500339CF0 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB496DDC1D24610500339CF0 /* GameViewController.swift */; };
@@ -40,6 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A7F56ED1D24B091006C6366 /* Level_0.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_0.json; sourceTree = "<group>"; };
+		2A7F56EE1D24B091006C6366 /* Level_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_1.json; sourceTree = "<group>"; };
+		2A7F56EF1D24B091006C6366 /* Level_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_2.json; sourceTree = "<group>"; };
+		2A7F56F01D24B091006C6366 /* Level_3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_3.json; sourceTree = "<group>"; };
+		2A7F56F11D24B091006C6366 /* Level_4.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Level_4.json; sourceTree = "<group>"; };
+		2A7F56F71D24B0E1006C6366 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		2A7F56F91D24B186006C6366 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		EB496DD31D24610500339CF0 /* CookieCrunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookieCrunch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB496DD61D24610500339CF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB496DDA1D24610500339CF0 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -86,6 +100,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A7F56EC1D24B091006C6366 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				2A7F56ED1D24B091006C6366 /* Level_0.json */,
+				2A7F56EE1D24B091006C6366 /* Level_1.json */,
+				2A7F56EF1D24B091006C6366 /* Level_2.json */,
+				2A7F56F01D24B091006C6366 /* Level_3.json */,
+				2A7F56F11D24B091006C6366 /* Level_4.json */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
 		EB496DCA1D24610500339CF0 = {
 			isa = PBXGroup;
 			children = (
@@ -113,12 +139,15 @@
 				EB496DDA1D24610500339CF0 /* GameScene.swift */,
 				EB496E0C1D2463F100339CF0 /* Cookie.swift */,
 				EB496E101D246B5F00339CF0 /* Level.swift */,
+				2A7F56F91D24B186006C6366 /* Extension.swift */,
+				2A7F56F71D24B0E1006C6366 /* Tile.swift */,
 				EB496E0E1D24684300339CF0 /* Array2D.swift */,
 				EB496DDC1D24610500339CF0 /* GameViewController.swift */,
 				EB496DDE1D24610500339CF0 /* Main.storyboard */,
 				EB496DE11D24610500339CF0 /* Assets.xcassets */,
 				EB496DE31D24610500339CF0 /* LaunchScreen.storyboard */,
 				EB496DE61D24610500339CF0 /* Info.plist */,
+				2A7F56EC1D24B091006C6366 /* Levels */,
 				EB496E0A1D24613100339CF0 /* Sprites.atlas */,
 				EB496E081D24612C00339CF0 /* Grid.atlas */,
 			);
@@ -247,9 +276,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A7F56F31D24B091006C6366 /* Level_1.json in Resources */,
+				2A7F56F61D24B091006C6366 /* Level_4.json in Resources */,
+				2A7F56F51D24B091006C6366 /* Level_3.json in Resources */,
 				EB496E0B1D24613100339CF0 /* Sprites.atlas in Resources */,
+				2A7F56F21D24B091006C6366 /* Level_0.json in Resources */,
 				EB496DE51D24610500339CF0 /* LaunchScreen.storyboard in Resources */,
 				EB496DE21D24610500339CF0 /* Assets.xcassets in Resources */,
+				2A7F56F41D24B091006C6366 /* Level_2.json in Resources */,
 				EB496E091D24612C00339CF0 /* Grid.atlas in Resources */,
 				EB496DE01D24610500339CF0 /* Main.storyboard in Resources */,
 			);
@@ -279,9 +313,11 @@
 				EB496E111D246B5F00339CF0 /* Level.swift in Sources */,
 				EB496DDB1D24610500339CF0 /* GameScene.swift in Sources */,
 				EB496E0D1D2463F100339CF0 /* Cookie.swift in Sources */,
+				2A7F56F81D24B0E1006C6366 /* Tile.swift in Sources */,
 				EB496DDD1D24610500339CF0 /* GameViewController.swift in Sources */,
 				EB496DD71D24610500339CF0 /* AppDelegate.swift in Sources */,
 				EB496E0F1D24684300339CF0 /* Array2D.swift in Sources */,
+				2A7F56FA1D24B186006C6366 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +546,7 @@
 				EB496E011D24610600339CF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB496E021D24610600339CF0 /* Build configuration list for PBXNativeTarget "CookieCrunchTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +555,7 @@
 				EB496E041D24610600339CF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB496E051D24610600339CF0 /* Build configuration list for PBXNativeTarget "CookieCrunchUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +564,7 @@
 				EB496E071D24610600339CF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
